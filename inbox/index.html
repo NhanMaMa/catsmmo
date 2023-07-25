@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inbox</title>
+        <link rel="shortcut icon" href="../assets/img/icon.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="../assets/css/styles-inbox.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    </head>
+    <body>
+        <div id="root">
+            <div id="main">
+                <div class="container">
+                    <header>
+                        <div id="cover-image" style="background-image: url('../assets/img/bia.jpg');"></div>
+                        <div id="profile-header">
+                            <div id="avatar-image" style="background-image: url('../assets/img/avt.jpg');"></div>
+                            <div id="name">
+                                <p id="first-name" class="names">Nguyễn Thành Nhân</p>
+                                <p id="nickname" class="nicknames"></p>
+                                <div id="skills">
+                                    <div class="skill-item" style="color:#ff758f;">Buôn Bán VPS</div>
+                                    <div class="skill-item" style="color:#85D18A;">Tricker</div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <div id="content-body">
+                        <p class="drop-title">Thông Tin Liên Hệ</p>
+                        <div id="link-box">
+                            <div class="link-item">
+                                <div class="bio-story-thumb" onclick="window.open('https://www.facebook.com/profile.php?id=100076686566063', '_blank')" style="background-image: url('../assets/img/facebook.jpg');"></div>
+                                <div class="link-content">
+                                    <p>Facebook</p>
+                                    <span onclick="window.open('https://www.facebook.com/profile.php?id=100076686566063', '_blank')">Nguyễn Thành Nhân</span>
+                                </div>
+                                <div class="link-btn">
+                                    <div class="link-btn-chill light-blue" onclick="geturl('https://www.facebook.com/profile.php?id=100076686566063')">COPY</div>
+                                </div>
+                            </div>
+                            <div class="link-item">
+                                <div class="bio-story-thumb" onclick="window.open('https://zalo.me/0702584825', '_blank')" style="background-image: url('../assets/img/zalo.jpg');"></div>
+                                <div class="link-content">
+                                    <p>Zalo</p>
+                                    <span onclick="window.open('https://zalo.me/0702584825', '_blank')">0702584825</span>
+                                </div>
+                                <div class="link-btn">
+                                    <div class="link-btn-chill light-blue" onclick="geturl('0702584825')">COPY</div>
+                                </div>
+                            </div>
+                            <div class="link-item">
+                                <div class="bio-story-thumb" onclick="window.open('panunhan6@gmail.com', '_blank')" style="background-image: url('../assets/img/gmail.jpg');"></div>
+                                <div class="link-content">
+                                    <p>Gmail</p>
+                                    <span onclick="geturl('panunhan6@gmail.com')">panunhan6@gmail.com</span>
+                                </div>
+                                <div class="link-btn">
+                                    <div class="link-btn-chill light-blue" onclick="geturl('panunhan6@gmail.com')">COPY</div>
+                                </div>
+                            </div>
+                            <div class="link-item">
+                                <div class="bio-story-thumb" onclick="window.open('tel:0702584825', '_blank')" style="background-image: url('../assets/img/phone.jpg');"></div>
+                                <div class="link-content">
+                                    <p>Hotline</p>
+                                    <span onclick="geturl('0702584825')">0702584825</span>
+                                </div>
+                                <div class="link-btn">
+                                    <div class="link-btn-chill light-blue" onclick="geturl('0702584825')">COPY</div>
+                                </div>
+                            </div>
+                            <div class="link-item">
+                                <div class="bio-story-thumb" onclick="window.open('https://discord.com/channels/ITZ_CatMews#3996', '_blank')" style="background-image: url('https://play-lh.googleusercontent.com/0oO5sAneb9lJP6l8c6DH4aj6f85qNpplQVHmPmbbBxAukDnlO7DarDW0b-kEIHa8SQ');"></div>
+                                <div class="link-content">
+                                    <p>Discord</p>
+                                    <span onclick="geturl('ITZ_CatMews#3996')">ITZ_CatMews#3996</span>
+                                </div>
+                                <div class="link-btn">
+                                    <div class="link-btn-chill light-blue" onclick="geturl('ITZ_CatMews#3996')">COPY</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function geturl(giatri) {
+                var $temp = $("<input>");
+                $("body").append($temp);
+                $temp.val(giatri).select();
+                document.execCommand("copy");
+                $temp.remove();
+            }
+        </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" crossorigin="anonymous">
+        </script>
+        <script src="../assets/js/main.js"></script>
+    </body>
+    </html>
